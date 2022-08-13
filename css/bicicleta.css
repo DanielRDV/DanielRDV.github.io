@@ -1,0 +1,156 @@
+.bicicleta {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: start;
+	gap: 40px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.b2 {
+	margin-top: 60px;
+}
+
+.bicicleta-imgs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.bicicleta-imgs img {
+	flex: 1;
+	min-width: 200px;
+}
+.bicicleta-imgs img:first-child {
+	min-width: 100%;
+}
+
+.bicicleta-comprar {
+	display: grid;
+	grid-template-columns: max-content auto;
+	align-items: center;
+	justify-items: start;
+	gap: 8px 12px;
+	margin-bottom: 40px;
+}
+
+.bicicleta-comprar a {
+	grid-row: span 2;
+
+}
+
+.bicicleta-comprar span {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	background: var(--cor-12);
+	padding: 4px 12px;
+	border-radius: 4px;
+}
+
+.bicicleta-conteudo h2 {
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	margin-bottom: 12px;
+
+}
+
+.bicicleta-info,
+.bicicleta-ficha {
+	padding: 32px;
+	background: var(--cor-12);
+	border-radius: 4px;
+}
+
+.bicicleta-info {
+	margin-bottom: 40px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, max-content));
+	gap: 32px 32px
+}
+
+.bicicleta-info img {
+	width: 24px;
+	margin-bottom: 8px;
+}
+
+.bicicleta-info h3 {
+	margin-bottom: 8px;
+}
+
+.bicicleta-ficha li {
+	display: flex;
+	justify-content: space-between;
+	padding: 8px 0px;	
+	border-bottom: 1px solid var(--cor-11);
+
+}
+.bicicleta-ficha li:last-child {
+	border-bottom: none;
+}
+
+.bicicleta-ficha span {
+	color: var(--cor-6);
+}
+
+.seguro-bicicleta-bg {
+	background: var(--cor-11);
+	box-shadow: inset 0 -120px var(--cor-12), inset 0 120px var(--cor-0);
+}
+
+.seguro {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 40px ;
+	align-items: center;
+}
+
+.seguro-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.seguro-bicicleta-conteudo h2 {	
+	padding-bottom: 32px;
+
+}
+
+.seguro-bicicleta-conteudo p {
+	padding-bottom: 20px;
+}
+
+.seguro-bicicleta-conteudo {
+	padding-top: 180px;
+	padding-bottom: 180px;
+}
+
+
+
+
+
+@media (max-width: 800px) {
+	.bicicleta {
+		grid-template-columns: 1fr;
+	}
+
+	.bicicleta-comprar {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.bicicleta-imgs {
+		grid-row: 2;
+	}
+	.seguro {
+		grid-template-columns: 1fr;
+		padding-bottom: 60px;
+	}
+
+	.seguro-img img {
+		display: none;
+	}
+}
+
+
+

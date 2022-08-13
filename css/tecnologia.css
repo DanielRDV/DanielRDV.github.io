@@ -1,0 +1,94 @@
+.tecnologia-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 80px var(--cor-0), inset 0 -80px var(--cor-0);
+}
+
+.tecnologia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.tecnologia-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.tecnologia-counteudo {
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.tecnologia-counteudo > span {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.tecnologia-counteudo h2 {
+  margin-bottom: 32px;
+}
+
+.tecnologia-counteudo > p {
+  margin-bottom: 20px;
+}
+
+.tecnologia-vantagens {
+  display: flex;
+  gap: 40px;
+}
+
+.tecnologia-vantagens h3 {
+  margin-bottom: 8px;
+  width: max-content;
+}
+
+.tecnologia-vantagens img {
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  color: var(--p-1);
+  text-transform: uppercase;
+  padding-bottom: 80px;
+  font-weight: 600;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: currentColor;
+  margin-top: 4px;
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  .tecnologia-vantagens {
+    flex-direction: column;
+  }
+  .link {
+    font-size: 32px;
+  }
+  .link:hover {
+    color: var(--cor-0);
+  }
+  .tecnologia-counteudo h2 {
+    font-size: 32px;
+  }
+  .tecnologia-counteudo > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+  .tecnologia-imagem img {
+    display: none;
+  }
+}

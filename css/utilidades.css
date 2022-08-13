@@ -1,0 +1,74 @@
+.botao {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 5px;
+  background: linear-gradient(#ffc700, #ff9900);
+  color: #3b3008;
+  text-transform: uppercase;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: bold;
+  max-width: max-content;
+}
+
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(../../img/icones/seta.svg);
+  transition: 0.2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
+.botao:hover {
+  background: linear-gradient(#fbb60d, #e59300);
+}
+
+.botao.segundario {
+  background: var(--cor-10);
+  color: var(--cor-2);
+}
+
+.botao.segundario:hover {
+  background: var(--cor-9);
+}
+
+.conteiner {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo-bg {
+  background: var(--cor-11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.titulo p {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 800px) {
+  .titulo p {
+    font-size: 16px;
+  }
+
+  .titulo h1 {
+    font-size: 32px;
+  }
+}
