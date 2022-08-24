@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bikcraft - Bicicletas Eletrícas</title>
+    <link rel="icon" href="./favicon.svg" tipo="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +16,10 @@
       name="description"
       content="Bicicletas elétricas de alta precisão e qualidade,feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft."
     />
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
     <header class="header-bg">
@@ -43,10 +47,17 @@
             Bicicletas elétricas de alta precisão e qualidade, feitas sob medida
             para o cliente. Explore o mundo na sua velocidade com a Bikcraft.
           </p>
-          <a data-anime="600" class="botao fadeInUp" href="./bicicletas.html">Escolha a sua</a>
+          <a data-anime="600" class="botao fadeInUp" href="./bicicletas.html"
+            >Escolha a sua</a
+          >
         </div>
-        <div class="img-intro ">
-          <img data-anime="800" class="fadeInUp" src="./img/fotos/introducao.jpg" alt="Bicicleta Eletrica" />
+        <div class="img-intro">
+          <img
+            data-anime="800"
+            class="fadeInUp"
+            src="./img/fotos/introducao.jpg"
+            alt="Bicicleta Eletrica"
+          />
         </div>
       </div>
     </main>
@@ -246,7 +257,7 @@
       </div>
     </footer>
 
-  <script src="./js/simple-anime.js"></script>
-  <script src="./js/script.js"></script>
+    <script src="./js/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

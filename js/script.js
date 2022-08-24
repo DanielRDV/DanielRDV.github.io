@@ -33,7 +33,6 @@ function abrirPergunta(event) {
 	const controls = pergunta.getAttribute("aria-controls");
 	const resposta = document.getElementById(controls);
 
-
 	resposta.classList.toggle("abrir");
 	const ativa = resposta.classList.contains("abrir");
 	pergunta.setAttribute("aria-expanded", ativa);

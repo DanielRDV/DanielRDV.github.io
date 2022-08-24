@@ -19,12 +19,12 @@
 }
 
 .lojas-conteudo h3::before {
-	content: "";
-	display: inline-block;
-	height: 8px;
-	width: 12px;
-	background-color: var(--p-1);
-	margin-right: 8px;
+  content: "";
+  display: inline-block;
+  height: 8px;
+  width: 12px;
+  background-color: var(--p-1);
+  margin-right: 8px;
 }
 .lojas img {
   border-radius: 4px 4px 0 0;
@@ -51,7 +51,7 @@
 }
 
 .lojas-dados a {
-	text-align: left;
+  text-align: left;
 }
 
 .loja-tempo {
@@ -60,19 +60,17 @@
   gap: 8px;
 }
 
-@media (max-width:800px) {
-	.lojas {
-		grid-template-columns: 1fr;
-		gap: 40px;
-	}
+@media (max-width: 800px) {
+  .lojas {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 
-	.lojas h2 {
-		font-size: 48px;
-	}
+  .lojas h2 {
+    font-size: 48px;
+  }
 
-	.lojas-conteudo {
-		grid-template-columns: 1fr;
-	}
-
-
+  .lojas-conteudo {
+    grid-template-columns: 1fr;
+  }
 }
