@@ -68,3 +68,10 @@ function clickGaleria(troca) {
 }
 
 galeria.forEach(clickGaleria);
+
+
+//plugin.animação.
+  if(window.SimpleAnime) {
+   new SimpleAnime();
+  }
+
